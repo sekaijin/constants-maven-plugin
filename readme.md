@@ -17,36 +17,35 @@ You can redefine there's using properties:
     <properties>
         <constant.version>${project.artifactId}-${project.version}</constant.version>
     </properties>
-    
+
 The project.artifactId is converted to class name by capitalizing all words and removing dots.
 The project.groupId is used for package name.
 The ${maven.build.timestamp.format} is used, if defined, for the BUILD constant.
 
 Usage:
             <plugin>
-				<groupId>org.sekaijin</groupId>
-  				<artifactId>constants-maven-plugin</artifactId>
-  				<version>1.0.0-SNAPSHOT</version>
-       			<executions>
-          			<execution>
-            			<id>constants</id>
-            			<goals>
-              				<goal>generate</goal>
-            			</goals>
-          			</execution>
-        		</executions>
-      		</plugin>
+                <groupId>org.sekaijin</groupId>
+                  <artifactId>constants-maven-plugin</artifactId>
+                  <version>1.0.0-SNAPSHOT</version>
+                   <executions>
+                      <execution>
+                        <id>constants</id>
+                        <goals>
+                              <goal>generate</goal>
+                        </goals>
+                      </execution>
+                </executions>
+              </plugin>
 
 The result is :
 
-		package com.sap.conn;
+        package com.sap.conn;
 
-		public class SapJco3
-		{
-			public static final String FULL_NAME ="SAP :: JCO :: 3";
-			public static final String NAME ="sapjco3";
-			public static final String BUILD ="2020-12-05 17:12:20 CET";
-			public static final String VERSION ="sapjco3-3.0.0";
-		} //class
+        public class SapJco3
+        {
+            public static final String FULL_NAME ="SAP :: JCO :: 3";
+            public static final String NAME ="sapjco3";
+            public static final String BUILD ="2020-12-05 17:12:20 CET";
+            public static final String VERSION ="sapjco3-3.0.0";
+        } //class
 
-      
