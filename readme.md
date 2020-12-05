@@ -24,18 +24,18 @@ The ${maven.build.timestamp.format} is used, if defined, for the BUILD constant.
 
 Usage:
             <plugin>
-				<groupId>org.sekaijin</groupId>
-  				<artifactId>constants-maven-plugin</artifactId>
-  				<version>1.0.0-SNAPSHOT</version>
-       			<executions>
-          			<execution>
-            			<id>constants</id>
-            			<goals>
-              				<goal>generate</goal>
-            			</goals>
-          			</execution>
-        		</executions>
-      		</plugin>
+                <groupId>org.sekaijin</groupId>
+                <artifactId>constants-maven-plugin</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+                <executions>
+                <execution>
+                    <id>constants</id>
+                    <goals>
+                    <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 
 The result is :
 
