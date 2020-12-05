@@ -23,6 +23,7 @@ The project.groupId is used for package name.
 The ${maven.build.timestamp.format} is used, if defined, for the BUILD constant.
 
 Usage:
+
             <plugin>
                 <groupId>org.sekaijin</groupId>
                 <artifactId>constants-maven-plugin</artifactId>
